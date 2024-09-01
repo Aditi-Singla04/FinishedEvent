@@ -1,267 +1,561 @@
+// import React from "react";
+// import { Link } from "react-router-dom"; // Import the Link component
+// import img1 from '../images/arijit2.jpg';
+// import img2 from '../images/armaan.jpg';
+// import img3 from '../images/akash.jpg';
+// import img4 from '../images/shashi.jpg';
+// import img5 from '../images/aujla.png';
+// import img6 from '../images/bassi.jpg';
+
+// const HomePage = () => {
+//   return (
+//     <div className="bg-black min-h-screen text-white">
+//       <div className="finished-shows">
+//         <div className="line flex bg-black m-auto w-11/12 mt-2">
+//           <div className="tile-1 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img1}
+//                 alt="Arijit Singh Show"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert A - Arijit Singh Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 "Experience the soulful melodies of Arijit Singh live, as he brings his mesmerizing
+//                  voice to the stage, captivating audiences with his heartfelt performances.
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="tile-2 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img2}
+//                 alt="Armaan Malik"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert B - Armaan Malik Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 Get ready to groove with Armaan Malik's electrifying live performance,
+//                  filled with her chart-topping hits and infectious energy
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="line flex bg-black m-auto w-11/12 mt-2">
+//           <div className="tile-1 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img3}
+//                 alt="Akash Gupta Show"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert C - Akash Gupta Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 Laugh out loud with Akash Gupta's hilarious stand-up comedy, where everyday life meets
+//                  side-splitting humor and witty observations.
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+          
+//           <div className="tile-2 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img4}
+//                 alt="Shashi Dhiman Show"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert D - Shashi Dhiman Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 Experience the wit and charm of Shashi Dhiman as he delivers punchlines that
+//                  will leave you in stitches and wanting more.
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="line flex bg-black m-auto w-11/12 mt-2">
+//           <div className="tile-1 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img5}
+//                 alt="Karan Aujla Show"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert E - Karan Aujla Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 Get ready for an electrifying night with Karan Aujla, as he brings his
+//                  high-energy Punjabi beats and hit tracks to the stage.
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+          
+//           <div className="tile-2 bg-slate-900 text-white flex m-4">
+//             <div className="left">
+//               <img
+//                 src={img6}
+//                 alt="Anubhav Bassi Show"
+//                 className="w-72 p-2"
+//               />
+//             </div>
+//             <div className="right">
+//               <div className="textt w-80 m-2">
+//                 <div className="title text-violet-400 font-serif">
+//                   Concert F - Anubhav Bassi Show
+//                 </div>
+//                 <div className="desc font-serif text-violet-200">
+//                 Laugh out loud with Anubhav Bassi as he takes you on a hilarious journey
+//                  through his witty anecdotes and relatable stories.
+//                 </div>
+//               </div>
+//               <div className="rightt-2 flex justify-center">
+//                 <Link
+//                  to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HomePage;
+
+
+
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom"; // Import the Link component
+// import img1 from '../images/arijit2.jpg';
+// import img2 from '../images/armaan2.jpg';
+// import img3 from '../images/aakash.jpg';
+// import img4 from '../images/shashi.jpg';
+// import img5 from '../images/aujla.png';
+// import img6 from '../images/bassi.jpg';
+
+// const HomePage = () => {
+//   return (
+//     <div className="bg-black min-h-screen text-white">
+//       <div className="finished-shows">
+//         {/* First Row */}
+//         <div className="line flex flex-wrap justify-between bg-black m-auto w-11/12 mt-4">
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img1}
+//               alt="Arijit Singh Show"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert A - Arijit Singh Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Experience the soulful melodies of Arijit Singh live, as he brings his mesmerizing
+//                 voice to the stage, captivating audiences with his heartfelt performances.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img2}
+//               alt="Armaan Malik"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert B - Armaan Malik Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Get ready to groove with Armaan Malik's electrifying live performance,
+//                 filled with her chart-topping hits and infectious energy.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img3}
+//               alt="Akash Gupta Show"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert C - Akash Gupta Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Laugh out loud with Akash Gupta's hilarious stand-up comedy, where everyday life meets
+//                 side-splitting humor and witty observations.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Second Row */}
+//         <div className="line flex flex-wrap justify-between bg-black m-auto w-11/12 mt-4">
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img4}
+//               alt="Shashi Dhiman Show"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert D - Shashi Dhiman Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Experience the wit and charm of Shashi Dhiman as he delivers punchlines that
+//                 will leave you in stitches and wanting more.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img5}
+//               alt="Karan Aujla Show"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert E - Karan Aujla Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Get ready for an electrifying night with Karan Aujla, as he brings his
+//                 high-energy Punjabi beats and hit tracks to the stage.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+//             <img
+//               src={img6}
+//               alt="Anubhav Bassi Show"
+//               className="w-72"
+//             />
+//             <div className="textt w-72 mt-2">
+//               <div className="title text-violet-400 font-serif text-center">
+//                 Concert F - Anubhav Bassi Show
+//               </div>
+//               <div className="desc font-serif text-violet-200 text-center mt-1">
+//                 Laugh out loud with Anubhav Bassi as he takes you on a hilarious journey
+//                 through his witty anecdotes and relatable stories.
+//               </div>
+//               <div className="flex justify-center mt-2">
+//                 <Link
+//                   to="/detailsFinsihed"
+//                   className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+//                 >
+//                   Details
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HomePage;
+
+
+
+
+
+
+
 import React from "react";
-import img1 from '../images/arijit.png'
-import img2 from '../images/neha.png'
-import img3 from '../images/akash.jpg'
-import img4 from '../images/shashi.jpg'
-import img5 from '../images/aujla.png'
-import img6 from '../images/bassi.jpg'
+import { Link } from "react-router-dom"; 
+import img1 from '../images/arijit2.jpg';
+import img2 from '../images/armaan2.jpg';
+import img3 from '../images/aakash.jpg';
+import img4 from '../images/shashi.jpg';
+import img5 from '../images/aujla3.jpg';
+import img6 from '../images/bassi.jpg';
 
 const HomePage = () => {
   return (
-    <div className="bg-black min-h-screen text-white">
-      {/* Navbar */}
-      <nav className="bg-[#000000] p-4 shadow-lg">
-        <div className="container mx-auto flex flex-col">
-          <div className="flex justify-between items-center">
-            <a href="https://aashwinxgarg.github.io/Tickeve-frontend-designs/">
-              <div className="text-white text-3xl font-bold px-6">Tickeve</div>
-            </a>
-            <div className="flex items-center space-x-10 relative">
-              <div className="px-34 text-lg">
-                <button className="text-white focus:outline-none">Shows</button>
-                <a
-                  className="text-white px-8"
-                  href="https://aashwinxgarg.github.io/Tickeve-frontend-designs/"
-                >
-                  About
-                </a>
-              </div>
-              <div className="mr-4"></div>
-              <a
-                className="text-white py-2 px-5 rounded-xl border border-white"
-                href="https://aashwinxgarg.github.io/Tickeve-frontend-designs/"
-              >
-                Sign Up
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Upcoming Shows */}
-      <div className="upcoming-shows">
-        {/* Line 1 */}
-        <div className="line flex bg-black m-auto w-11/12 mt-2">
-          {/* Tile 1 */}
-          <div className="tile-1 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img1}
-                alt="Arijit Singh Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert A - Arijit Singh Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For die heart fans of Arijit Singh as he is going to perform
-                  the most intriguing songs he has ever had...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-          
-
-          {/* Tile 2 */}
-          <div className="tile-2 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img2}
-                alt="Zakir Khan Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert B - Zakir Khan Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For fans who love Stand-Up Comedy and love to get in the realms
-                  of crowdwork and funny stories...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="line flex bg-black m-auto w-11/12 mt-2">
-          {/* Tile 1 */}
-          <div className="tile-1 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img3}
-                alt="Arijit Singh Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert A - Arijit Singh Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For die heart fans of Arijit Singh as he is going to perform
-                  the most intriguing songs he has ever had...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-          
-
-          {/* Tile 2 */}
-          <div className="tile-2 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img4}
-                alt="Zakir Khan Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert B - Zakir Khan Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For fans who love Stand-Up Comedy and love to get in the realms
-                  of crowdwork and funny stories...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="line flex bg-black m-auto w-11/12 mt-2">
-          {/* Tile 1 */}
-          <div className="tile-1 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img5}
-                alt="Arijit Singh Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert A - Arijit Singh Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For die heart fans of Arijit Singh as he is going to perform
-                  the most intriguing songs he has ever had...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-          
-
-          {/* Tile 2 */}
-          <div className="tile-2 bg-slate-900 text-white flex m-4">
-            <div className="left">
-              <img
-                src={img6}
-                alt="Zakir Khan Show"
-                className="w-72 p-2"
-              />
-            </div>
-            <div className="right">
-              <div className="textt w-80 m-2">
-                <div className="title text-violet-400 font-serif">
-                  Concert B - Zakir Khan Show
-                </div>
-                <div className="desc font-serif text-violet-200">
-                  For fans who love Stand-Up Comedy and love to get in the realms
-                  of crowdwork and funny stories...
-                </div>
-              </div>
-              <div className="rightt-2 flex justify-center">
-                <a
-                  href="detailsUpcomingConcerts.html"
-                  className="bg-black text-violet-300 p-2 font-serif mb-4 rounded-xl details-button"
-                >
-                  Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        {/* Repeat similar structure for other concerts... */}
-        
-        {/* Call to Action Section */}
-        <div className="h-full w-full bg-gradient-to-b from-[#a388e9] to-[#d5c8f5] text-white border border-gray-600 rounded-xl flex flex-col items-center justify-center font-serif p-6">
-          <div className="text-4xl font-bold mt-10">Be the first to get access</div>
-          <div className="text-xl mt-4 text-center font-serif text-gray-200">
-            You can't wait any longer, just like us?<br />
-            Then sign up to our waitlist to be one of the Tickeve users.
-          </div>
-          <div className="text-center mt-12">
-            <input
-              className="py-3 px-10 font-serif mr-3 rounded-xl pr-14 text-center text-white bg-[#191919]"
-              type="email"
-              placeholder="Email Address"
+    <div className="bg-black min-h-screen text-white p-0 m-0">
+      <div className="finished-shows">
+        {/* First Row */}
+        <div className="line flex flex-wrap justify-between bg-black m-auto w-11/12 mt-4">
+          {/* Arijit Singh Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img1}
+              alt="Arijit Singh Show"
+              className="w-72 h-40 object-cover" // Ensure consistent height
             />
-            <a className="px-6 py-4 bg-[#131314] text-white rounded-xl" href="/Concert/:id">
-              Join Waitlist
-            </a>
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert A - Arijit Singh Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Experience the soulful melodies of Arijit Singh live, as he brings his mesmerizing
+                voice to the stage, captivating audiences with his heartfelt performances.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/detailsFinsihed"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
           </div>
-          <hr className="w-full border-gray-900 mt-6" />
-          <div className="w-full text-white font-serif flex mt-6">
-            <p className="w-full text-left text-[#131314] text-3xl">
-              Tickeve<br />
-              <span className="text-xl">@ 2024</span>
-            </p>
-            <p className="w-full text-right text-[#131314]">
-              Contact us: info@tickeve.com<br />
-              Privacy Policy | Terms of Service
-            </p>
+
+          {/* Armaan Malik Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img2}
+              alt="Armaan Malik"
+              className="w-72 h-40 object-cover" // Ensure consistent height
+            />
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert B - Armaan Malik Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Get ready to groove with Armaan Malik's electrifying live performance,
+                filled with her chart-topping hits and infectious energy.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/detailsFinsihed"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Akash Gupta Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img3}
+              alt="Akash Gupta Show"
+              className="w-72 h-40 object-cover" // Ensure consistent height
+            />
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert C - Akash Gupta Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Laugh out loud with Akash Gupta's hilarious stand-up comedy, where everyday life meets
+                side-splitting humor and witty observations.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/detailsFinsihed"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="line flex flex-wrap justify-between bg-black m-auto w-11/12 mt-4">
+          {/* Shashi Dhiman Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img4}
+              alt="Shashi Dhiman Show"
+              className="w-72 h-40 object-cover" // Ensure consistent height
+            />
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert D - Shashi Dhiman Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Experience the wit and charm of Shashi Dhiman as he delivers punchlines that
+                will leave you in stitches and wanting more.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/shashiDetails"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Karan Aujla Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img5}
+              alt="Karan Aujla Show"
+              className="w-72 h-40 object-cover" // Ensure consistent height
+            />
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert E - Karan Aujla Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Get ready for an electrifying night with Karan Aujla, as he brings his
+                high-energy Punjabi beats and hit tracks to the stage.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/detailsFinsihed"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Anubhav Bassi Show */}
+          <div className="tile bg-slate-900 text-white flex flex-col items-center m-4">
+            <img
+              src={img6}
+              alt="Anubhav Bassi Show"
+              className="w-72 h-40 object-cover" // Ensure consistent height
+            />
+            <div className="textt w-72 mt-2">
+              <div className="title text-violet-400 font-serif text-center">
+                Concert F - Anubhav Bassi Show
+              </div>
+              <div className="desc font-serif text-violet-200 text-center mt-1">
+                Laugh out loud with Anubhav Bassi as he takes you on a hilarious journey
+                through his witty anecdotes and relatable stories.
+              </div>
+              <div className="flex justify-center mt-2">
+                <Link
+                  to="/detailsFinsihed"
+                  className="bg-black text-violet-300 p-2 font-serif rounded-xl details-button"
+                >
+                  Details
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -270,5 +564,21 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
