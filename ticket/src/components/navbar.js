@@ -24,9 +24,8 @@ const Navbar = () => {
     <nav className="bg-[#000000] p-4 shadow-lg">
       <div className="container mx-auto flex flex-col m-0 p-0">
         <div className="flex justify-between items-center">
-          <Link to="/">
             <div className="text-white text-3xl font-bold px-6">Tickeve</div>
-          </Link>
+          
           <div className="flex items-center space-x-10 relative">
 
             <div className="px-34 text-lg ">
@@ -42,38 +41,12 @@ const Navbar = () => {
                   className="absolute left-0 mt-2 bg-gray-700 text-white rounded-md shadow-lg w-48"
                 >
                   <ul className="py-1">
-                    <li>
-                      <Link
-                        to="/Concert/:id"
-                        className="block px-4 py-2 hover:bg-gray-600"
-                        onClick={() => setShowDropdown(false)}
-                      >
-                        Upcoming Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/live"
-                        className="block px-4 py-2 hover:bg-gray-600"
-                        onClick={() => setShowDropdown(false)}
-                      >
-                        Live Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/finish"
-                        className="block px-4 py-2 hover:bg-gray-600"
-                        onClick={() => setShowDropdown(false)}
-                      >
-                        Finished Events
-                      </Link>
-                    </li>
+                    
                     
                   </ul>
                 </div>
               )}
-            <Link to="/about" className="text-white  px-8">
+            <Link className="text-white  px-8">
               About
             </Link>
           </div>
@@ -81,7 +54,6 @@ const Navbar = () => {
 
             </div>
             <Link
-              to="/signup"
               className="text-white py-2 px-5 rounded-xl border border-white"
             >
               Sign Up
