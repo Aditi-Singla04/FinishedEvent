@@ -392,6 +392,7 @@ import img3 from '../images/aakash.jpg';
 import img4 from '../images/shashi.jpg';
 import img5 from '../images/aujla3.jpg';
 import img6 from '../images/bassi.jpg';
+import './bg.css'
 
 const HomePage = () => {
   return (
