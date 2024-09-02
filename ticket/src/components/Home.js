@@ -390,7 +390,7 @@ import img1 from '../images/arijit2.jpg';
 import img2 from '../images/armaan2.jpg';
 import img3 from '../images/aakash.jpg';
 import img4 from '../images/shashi.jpg';
-import img5 from '../images/aujla3.jpg';
+import img5 from '../images/aujla2.jpeg';
 import img6 from '../images/bassi.jpg';
 import './bg.css'
 

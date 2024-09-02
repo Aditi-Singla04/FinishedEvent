@@ -629,19 +629,44 @@ const Finished = () => {
 
           {/* Description directly below the image/video */}
           {visibleDescription && (
+            <p className="underline underline-offset-4 text-lg text-white mt-4">
+              <span className="font-bold">About:</span> 
+            </p>
+          )}
+
+          {visibleDescription && (
             <p className="text-lg text-white mt-4">
-              <span className="font-bold">Description:</span> The Arijit Singh Live Concert was a spectacular event filled with
+              <span>The Arijit Singh Live Concert was a spectacular event filled with
               soulful performances and mesmerizing melodies. Fans were captivated
               by his heartfelt renditions of popular hits. Held on 25 March 2024, the concert showcased
               Arijit Singh's incredible vocal range and emotional depth, creating an unforgettable
-              experience for all attendees at the venue.
+              experience for all attendees at the venue.</span> 
+              <hr className="my-4 w-full mx-auto border-t border-gray-200" />
+            </p>
+          )}
+          {visibleDescription && (
+            <p className="underline underline-offset-4 text-lg text-white mt-4">
+              <span className="font-bold">About the Artist:</span>
+            </p>
+          )}
+          {visibleDescription && (
+          <p className="text-lg text-white mt-4">
+              <span>Arijit Singh is an acclaimed Indian playback singer
+               known for his soulful voice and versatile singing style. With numerous chart-topping
+                hits across various languages, he has become a prominent figure in Bollywood music,
+                 captivating audiences worldwide with his emotional depth and powerful renditions of
+                  romantic and melodious songs</span> 
             </p>
           )}
         </div>
 
         {/* Event Details Section */}
+        
         <div className="p-6 w-full md:w-1/2 lg:w-2/5 text-center md:text-left">
+        
           <div className="p-6 rounded-lg shadow-lg">
+          <div className="space-y-4">
+          <div className="border border-gray-200 rounded-lg p-4 max-w-ms">
             <div className="mb-6 md:mb-0">
               <h1 className="title font-size-30px text-3xl font-bold text-violet-300">The Arijit Singh Live Concert</h1>
             </div>
@@ -662,9 +687,14 @@ const Finished = () => {
               <p className="text-lg mb-4 flex items-center transition-opacity duration-500">
                 <FontAwesomeIcon icon={faClock} className="text-violet-200 mr-2" />
                 7:00 PM - 10:00 PM
+    
               </p>
             )}
-            <p className="text-xl text-violet-300 font-semibold mb-2">Event Details</p>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-4 max-w-ms">
+            <p className="text-xl text-violet-300 font-semibold mb-2">Event Guide
+            <hr className="my-4 w-3/4 border-t border-gray-200" />
+            </p>
             
             {visibleDetail >= 5 && (
               <p className="text-lg mb-4 flex items-center transition-opacity duration-500">
@@ -685,6 +715,8 @@ const Finished = () => {
                 Rod Laver Arena, Melbourne
               </p>
             )}
+            </div>
+            </div>
           </div>
         </div>
       </div>
